@@ -36,3 +36,8 @@ Untuk menggunakan aplikasi kalkulator ini secara lokal, ikuti langkah-langkah be
    open index.html  # Atau buka di browser favorit Anda
    ```
 ## Result
+![image](https://github.com/user-attachments/assets/c0d5a725-ea20-4247-8e2b-68ab97d9c828)
+
+![image](https://github.com/user-attachments/assets/4ded6753-5203-4fbc-882b-2fad87a1d7f4)
+
+
