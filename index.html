@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+
+    <!-- Favicon -->
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="calculator">
+        <header class="header">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <h1>Calculator | WebApp</h1>
+        </header>
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="square()">x²</button>
+            <button onclick="powerN()">xⁿ</button>
+            <button onclick="squareRoot()">√</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="modulus()">MOD</button>
+            <button onclick="integerDivision()">DIV</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator">×</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/') " class="operator">÷</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculateResult()" class="equal">=</button>
+        </div>
+        <footer class="footer">
+            <p>Created by ❤️ MaklonFR | Copyright 2025</p>
+        </footer>
+        <div class="footer-line"></div> <!-- Line below the footer -->
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

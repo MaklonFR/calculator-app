@@ -1,0 +1,117 @@
+body {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    justify-content: center;
+}
+
+.calculator {
+    width: 400px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(242, 121, 121, 0.1);
+    text-align: center;
+}
+
+.display {
+    font-family: 'Space Mono', monospace;
+    width: 94%;
+    height: 50px;
+    font-size: 3em;
+    text-align: right;
+    padding: 10px;
+    background: #FBFBFB;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #BFBBA9;
+    cursor: pointer;
+    background: #F5ECD5;
+}
+
+button.operator {
+    background: #155E95;
+    color: #fff;
+}
+
+button.equal {
+    background: #497D74;
+    color: #fff;
+    grid-column: span 2; /* Span 2 columns */
+    font-size: 1.8em;
+}
+
+button.clear {
+    background: #8E1616;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #FBF5DD;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.logo {
+    width: 40px; /* Sesuaikan ukuran logo */
+    height: 40px; /* Sesuaikan ukuran logo */
+    margin-right: 20px; /* Jarak antara logo dan teks */
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* The line under the footer */
+.footer-line {
+    height: 2.2px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #2b2a2a; /* White line */
+    margin-top: 10px; /* Space between footer and line */
+  }
+
+  /* Responsive Design */
+@media (max-width: 480px) {
+    .calculator {
+        width: 90%; /* Make the calculator smaller on mobile */
+    }
+
+    .display {
+        font-size: 2em; /* Make the text in the display smaller */
+    }
+
+    button {
+        font-size: 1.2em; /* Smaller button text */
+        padding: 12px;
+    }
+}
