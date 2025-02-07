@@ -1,5 +1,6 @@
 function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+    let display = document.getElementById('display');
+    display.value += value;
 }
 
 function clearDisplay() {
@@ -8,7 +9,17 @@ function clearDisplay() {
 
 function calculateResult() {
     try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
+        let expression = document.getElementById('display').value
+            .replace(/\^/g, '**') // Ubah ^ menjadi ** untuk pangkat
+            .replace(/\/\//g, '/'); // Ubah // menjadi /
+
+        let result = new Function('return ' + expression)();
+
+        if (document.getElementById('display').value.includes('//')) {
+            result = Math.floor(result); // Jika "//" digunakan, buat hasilnya menjadi integer
+        }
+
+        document.getElementById('display').value = result;
     } catch {
         document.getElementById('display').value = 'Error';
     }
@@ -20,9 +31,8 @@ function square() {
 }
 
 function powerN() {
-    let base = parseFloat(prompt("Masukkan basis:", ""));
-    let exponent = parseFloat(prompt("Masukkan eksponen:", ""));
-    document.getElementById('display').value = Math.pow(base, exponent);
+    let display = document.getElementById('display');
+    display.value += '^'; // Menambahkan simbol ^ agar bisa digunakan sebagai pangkat
 }
 
 function squareRoot() {
@@ -37,16 +47,10 @@ function percentage() {
 
 function modulus() {
     let display = document.getElementById('display');
-    let values = display.value.split('%');
-    if (values.length === 2) {
-        display.value = parseFloat(values[0]) % parseFloat(values[1]);
-    }
+    display.value += '%'; // Menambahkan % agar bisa digunakan sebagai modulus
 }
 
 function integerDivision() {
     let display = document.getElementById('display');
-    let values = display.value.split('//');
-    if (values.length === 2) {
-        display.value = Math.floor(parseFloat(values[0]) / parseFloat(values[1]));
-    }
+    display.value += '//'; // Menambahkan "//" agar bisa digunakan untuk pembagian bulat
 }

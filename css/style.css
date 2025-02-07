@@ -1,3 +1,4 @@
+/* 1. CSS body*/
 body {
     font-family: 'Space Mono', monospace;
     font-size: 12px;
@@ -10,6 +11,7 @@ body {
     justify-content: center;
 }
 
+/* 2. CSS class calculator*/
 .calculator {
     width: 400px;
     background: #fff;
@@ -19,6 +21,7 @@ body {
     text-align: center;
 }
 
+/* 3. CSS class display*/
 .display {
     font-family: 'Space Mono', monospace;
     width: 94%;
@@ -33,12 +36,14 @@ body {
     margin-bottom: 10px;
 }
 
+/* 4. CSS class button*/
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
+/* 5. CSS elemen button*/
 button {
     font-family: 'Space Mono', monospace;
     font-size: 1.2em;
@@ -49,11 +54,13 @@ button {
     background: #F5ECD5;
 }
 
+/* 6. CSS elemen button class operator*/
 button.operator {
     background: #155E95;
     color: #fff;
 }
 
+/* 7. CSS elemen button class equal*/
 button.equal {
     background: #497D74;
     color: #fff;
@@ -61,11 +68,13 @@ button.equal {
     font-size: 1.2em;
 }
 
+/* 8. CSS elemen button class clear*/
 button.clear {
     background: #8E1616;
     color: #fff;
 }
 
+/* 9. CSS class footer*/
 .footer {
     margin-top: 20px;
     font-size: 12px;
@@ -73,6 +82,7 @@ button.clear {
     text-align: center;
 }
 
+/* 10. CSS class header*/
 .header {
     display: flex;
     align-items: center;
@@ -81,37 +91,39 @@ button.clear {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* 11. CSS class logo*/
 .logo {
-    width: 40px; /* Sesuaikan ukuran logo */
-    height: 40px; /* Sesuaikan ukuran logo */
-    margin-right: 20px; /* Jarak antara logo dan teks */
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
+
+/* 12. CSS elemen h1 */
 h1 {
     text-align: center;
     color: #333;
 }
 
-/* The line under the footer */
+/* 13. CSS class footer-line*/
 .footer-line {
     height: 2.2px;
     margin-left: 30px;
     margin-right: 30px;
-    background-color: #2b2a2a; /* White line */
-    margin-top: 10px; /* Space between footer and line */
+    background-color: #2b2a2a;
+    margin-top: 10px;
   }
 
-  /* Responsive Design */
+/* 14. Responsive Design */
 @media (max-width: 480px) {
     .calculator {
-        width: 90%; /* Make the calculator smaller on mobile */
+        width: 90%;
     }
-
     .display {
-        font-size: 2em; /* Make the text in the display smaller */
+        font-size: 2em;
     }
-
     button {
-        font-size: 1.2em; /* Smaller button text */
+        font-size: 1.2em;
         padding: 12px;
     }
 }
