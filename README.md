@@ -40,4 +40,7 @@ Untuk menggunakan aplikasi kalkulator ini secara lokal, ikuti langkah-langkah be
 
 ![image](https://github.com/user-attachments/assets/4ded6753-5203-4fbc-882b-2fad87a1d7f4)
 
+## Link Youtube Tutorial
+https://www.youtube.com/watch?v=YChPx2qkgLk
+
 
